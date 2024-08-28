@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e1e1e1;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.sr-only {
+  border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+	clip-path: inset(50%) !important;
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 8px;
+  margin: 8px 0;
+  border: 2px solid var(--input-border-color);
+  border-radius: 5px;
+  max-width: 500px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.messenger-container {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 50;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-end; /* Align the form and button to the right */
+}
+
+.messenger-box {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  margin-bottom: 8px; /* Space between form and button */
+  overflow: hidden;
+}
+
+.messenger-header {
+  background-color: #035B9B;
+  color: #ffffff;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.messenger-header h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.messenger-form {
+  padding: 16px;
+}
+
+.messenger-input {
+  width: 100%;
+  border: 2px solid #3da9fc !important;
+}
+
+textarea {
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 6px;
+  margin-bottom: 5px;
+  width: 93%;
+  height: 100px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #3da9fc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.send-button {
+  cursor: pointer;
+  background-color: #035B9B;
+  border: 2px solid #3da9fc;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  margin-top: 8px;
+}
+
+.send-button:hover {
+  background-color: #ffffff;
+  color: #035B9B;
+}
+
+.send-button svg {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.success {
+  background-color: #408140;
+  display: inline-block;
+  color: #ffffff;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.messenger-button {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #035B9B;
+  padding: 16px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.messenger-button:hover {
+  background-color: #035B9B;
+  color: #ffffff;
+}

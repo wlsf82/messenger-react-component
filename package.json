@@ -1,0 +1,53 @@
+{
+  "name": "messenger-react-component",
+  "version": "1.0.0",
+  "description": "Sample project to demonstrate a mix of Cypress component and a11y testing.",
+  "keywords": [
+    "Cypress.io",
+    "Component testing",
+    "Testing"
+  ],
+  "author": "Walmyr Filho <wlsf82@gmail.com> (https://walmyr.dev)",
+  "license": "MIT",
+  "dependencies": {
+    "-": "^0.0.1",
+    "lucide-react": "^0.436.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "cypress run --component",
+    "cy:open": "cypress open"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "globals": {
+      "cy": true,
+      "Cypress": true
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "axe-core": "^4.10.0",
+    "cypress": "^13.14.0",
+    "cypress-axe": "^1.5.0"
+  }
+}
