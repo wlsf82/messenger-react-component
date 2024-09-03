@@ -9,11 +9,7 @@ const options = {
 
 describe('<Messenger />', options, () => {
   beforeEach(() => {
-    cy.mount(
-      <main>
-        <Messenger />
-      </main>
-    )
+    cy.mount(<Messenger />)
 
     cy.injectAxe()
     cy.configureAxe({

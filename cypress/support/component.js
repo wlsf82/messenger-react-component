@@ -4,4 +4,10 @@ import 'cypress-axe'
 
 import { mount } from 'cypress/react18'
 
-Cypress.Commands.add('mount', mount)
+Cypress.Commands.add('mount', component => {
+  return mount(
+    <main>
+      {component}
+    </main>
+  )
+})
